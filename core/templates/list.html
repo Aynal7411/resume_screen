@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>All Uploaded Resumes</h2>
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>File</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for resume in resumes %}
+                <tr>
+                    <td>{{ resume.name }}</td>
+                    <td>{{ resume.score }}</td>
+                    <td><a href="{{ resume.file.url }}" class="btn btn-outline-secondary btn-sm" download>Download</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

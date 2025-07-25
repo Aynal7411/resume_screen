@@ -1,0 +1,40 @@
+body {
+    background-color: #7d8d8b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+nav a.btn {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a.btn:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+}
+
+.container {
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem;
+    }
+    nav a.btn {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+}
